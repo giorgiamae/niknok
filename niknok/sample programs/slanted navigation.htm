@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://jsfiddle.net/HRWqq/show/# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title> - jsFiddle demo</title>
+  
+  <script type="text/javascript" src="./slanted navigation_files/mootools-core-1.4.5-nocompat.js"></script>
+  <link rel="stylesheet" type="text/css" href="./slanted navigation_files/normalize.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="./slanted navigation_files/result-light.css">
+  
+  <style type="text/css">
+        li {
+            float: left;
+            background: #ccc;
+            margin-right: 50px;
+        }
+        li > a {
+            text-decoration: none;
+            display: block;
+            position: relative;
+            line-height: 40px;
+            padding: 0 8px;
+            color: #444;
+            text-shadow: 0 1px 0 red;
+            background: white
+        }
+        li > a:before {
+            content: '';
+            position: absolute;
+            border: 20px solid #ccc;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            right: 100%;
+            top: 0;
+            background-color: orange;
+        }
+        li > a:after {
+            content: '';
+            position: absolute;
+            border: 20px solid #ccc;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            left: 100%;
+            top: 0;
+        }
+
+
+
+
+
+        li:first-child > a {
+            background: #aaa;
+        }
+        li:first-child > a:after {
+            border-top-color: #aaa;
+            border-left-color: #aaa;
+        }
+
+        li:last-child > a {
+            background: #ddd;
+        }
+        li:last-child > a:before{
+            border-right-color: #ddd;
+            border-bottom-color: #ddd;
+        }
+        li:last-child > a:after {
+            border: 0;
+        }
+
+  </style>
+  
+
+
+</head>
+<body>
+  <ul>
+    <li><a href="./slanted navigation_files/slanted navigation.htm">Some Text</a></li>
+    <li><a href="./slanted navigation_files/slanted navigation.htm">Some Text</a></li>
+    <li><a href="./slanted navigation_files/slanted navigation.htm">Some Text</a></li>
+    <li><a href="./slanted navigation_files/slanted navigation.htm">Some Text</a></li>
+    <li><a href="./slanted navigation_files/slanted navigation.htm">Some Text</a></li>
+</ul>
+  
+
+
+
+
+
+</body></html>

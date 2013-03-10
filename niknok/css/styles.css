@@ -1,0 +1,91 @@
+body {
+	background-image:url("../images/top.jpg");
+	background-repeat: repeat-x;
+	background-color: #FF3333;
+}
+
+#wrapper {
+	width: 860px;
+	height: auto;
+	margin: 3em auto;
+	background-color: white;
+	overflow: hidden;
+
+}
+
+#logo {
+	position: absolute;
+}
+
+#nav {
+	width: 32em;
+	height: 4em;
+	margin-left: 120px;
+	background-color: #c30000;
+	float: right;
+/*	border-top-left-radius: 2em 2em;*/
+	overflow: hidden;
+
+}
+
+.ulnav{
+	width: 42em;
+	margin-left: -3em;
+}
+
+#nav ul li {
+	list-style: none;
+	float: left;
+	background-color: #c30000;
+	margin-top: -3em;
+	padding: 3em.90em;
+	display: inline;
+/*	  border-width: 30px;
+   border-color: red blue green yellow;
+   border-style: solid;  */
+}
+
+#nav li:hover {
+	background-color: #ff6c00;
+
+/*
+	border-width: 30px;
+	border-color: #ff6c00 transparent transparent transparent;
+	border-style: solid; */
+}
+
+
+li {
+    float: left;
+    background: #ccc;
+    margin-right: 40px;
+}
+li > a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    line-height: 40px;
+    padding: 0 8px;
+}
+li > a:before {
+    content: '';
+    position: absolute;
+    border: 10px solid #ccc;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    right: 100%;
+    top: 0; 
+}
+li > a:after {
+    content: '';
+    position: absolute;
+    border: 20px solid #ccc;
+    border-right-color: #ccc;
+    border-bottom-color: #ccc;
+    left: 100%;
+    top: 0;
+}
+
+li a:hover{
+	background-color: orange;
+}
